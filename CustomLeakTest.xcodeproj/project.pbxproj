@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F78ABA3521DCC99D00315524 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ABA3421DCC99D00315524 /* AppDelegate.m */; };
+		F78ABA3821DCC99D00315524 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ABA3721DCC99D00315524 /* ViewController.m */; };
+		F78ABA3B21DCC99D00315524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78ABA3921DCC99D00315524 /* Main.storyboard */; };
+		F78ABA3D21DCC99D00315524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F78ABA3C21DCC99D00315524 /* Assets.xcassets */; };
+		F78ABA4021DCC99D00315524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F78ABA3E21DCC99D00315524 /* LaunchScreen.storyboard */; };
+		F78ABA4321DCC99D00315524 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ABA4221DCC99D00315524 /* main.m */; };
+		F78ABA4D21DCC99E00315524 /* CustomLeakTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ABA4C21DCC99E00315524 /* CustomLeakTestTests.m */; };
+		F78ABA5821DCC99E00315524 /* CustomLeakTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ABA5721DCC99E00315524 /* CustomLeakTestUITests.m */; };
+		F78ABA6B21DCCA2400315524 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ABA6521DCCA2300315524 /* TestViewController.m */; };
+		F78ABA6C21DCCA2400315524 /* UINavigationController+LeakTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ABA6621DCCA2300315524 /* UINavigationController+LeakTest.m */; };
+		F78ABA6D21DCCA2400315524 /* UIViewController+LeaksTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F78ABA6921DCCA2400315524 /* UIViewController+LeaksTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F78ABA4921DCC99E00315524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F78ABA2821DCC99D00315524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F78ABA2F21DCC99D00315524;
+			remoteInfo = CustomLeakTest;
+		};
+		F78ABA5421DCC99E00315524 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F78ABA2821DCC99D00315524 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F78ABA2F21DCC99D00315524;
+			remoteInfo = CustomLeakTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F78ABA3021DCC99D00315524 /* CustomLeakTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLeakTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F78ABA3321DCC99D00315524 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F78ABA3421DCC99D00315524 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F78ABA3621DCC99D00315524 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F78ABA3721DCC99D00315524 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F78ABA3A21DCC99D00315524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F78ABA3C21DCC99D00315524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F78ABA3F21DCC99D00315524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F78ABA4121DCC99D00315524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F78ABA4221DCC99D00315524 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F78ABA4821DCC99E00315524 /* CustomLeakTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLeakTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F78ABA4C21DCC99E00315524 /* CustomLeakTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLeakTestTests.m; sourceTree = "<group>"; };
+		F78ABA4E21DCC99E00315524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F78ABA5321DCC99E00315524 /* CustomLeakTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomLeakTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F78ABA5721DCC99E00315524 /* CustomLeakTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomLeakTestUITests.m; sourceTree = "<group>"; };
+		F78ABA5921DCC99E00315524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F78ABA6521DCCA2300315524 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		F78ABA6621DCCA2300315524 /* UINavigationController+LeakTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+LeakTest.m"; sourceTree = "<group>"; };
+		F78ABA6721DCCA2300315524 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		F78ABA6821DCCA2300315524 /* UIViewController+LeaksTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LeaksTest.h"; sourceTree = "<group>"; };
+		F78ABA6921DCCA2400315524 /* UIViewController+LeaksTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LeaksTest.m"; sourceTree = "<group>"; };
+		F78ABA6A21DCCA2400315524 /* UINavigationController+LeakTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+LeakTest.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F78ABA2D21DCC99D00315524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F78ABA4521DCC99E00315524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F78ABA5021DCC99E00315524 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F78ABA2721DCC99D00315524 = {
+			isa = PBXGroup;
+			children = (
+				F78ABA3221DCC99D00315524 /* CustomLeakTest */,
+				F78ABA4B21DCC99E00315524 /* CustomLeakTestTests */,
+				F78ABA5621DCC99E00315524 /* CustomLeakTestUITests */,
+				F78ABA3121DCC99D00315524 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F78ABA3121DCC99D00315524 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F78ABA3021DCC99D00315524 /* CustomLeakTest.app */,
+				F78ABA4821DCC99E00315524 /* CustomLeakTestTests.xctest */,
+				F78ABA5321DCC99E00315524 /* CustomLeakTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F78ABA3221DCC99D00315524 /* CustomLeakTest */ = {
+			isa = PBXGroup;
+			children = (
+				F78ABA3321DCC99D00315524 /* AppDelegate.h */,
+				F78ABA3421DCC99D00315524 /* AppDelegate.m */,
+				F78ABA3621DCC99D00315524 /* ViewController.h */,
+				F78ABA3721DCC99D00315524 /* ViewController.m */,
+				F78ABA6721DCCA2300315524 /* TestViewController.h */,
+				F78ABA6521DCCA2300315524 /* TestViewController.m */,
+				F78ABA6A21DCCA2400315524 /* UINavigationController+LeakTest.h */,
+				F78ABA6621DCCA2300315524 /* UINavigationController+LeakTest.m */,
+				F78ABA6821DCCA2300315524 /* UIViewController+LeaksTest.h */,
+				F78ABA6921DCCA2400315524 /* UIViewController+LeaksTest.m */,
+				F78ABA3921DCC99D00315524 /* Main.storyboard */,
+				F78ABA3C21DCC99D00315524 /* Assets.xcassets */,
+				F78ABA3E21DCC99D00315524 /* LaunchScreen.storyboard */,
+				F78ABA4121DCC99D00315524 /* Info.plist */,
+				F78ABA4221DCC99D00315524 /* main.m */,
+			);
+			path = CustomLeakTest;
+			sourceTree = "<group>";
+		};
+		F78ABA4B21DCC99E00315524 /* CustomLeakTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F78ABA4C21DCC99E00315524 /* CustomLeakTestTests.m */,
+				F78ABA4E21DCC99E00315524 /* Info.plist */,
+			);
+			path = CustomLeakTestTests;
+			sourceTree = "<group>";
+		};
+		F78ABA5621DCC99E00315524 /* CustomLeakTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F78ABA5721DCC99E00315524 /* CustomLeakTestUITests.m */,
+				F78ABA5921DCC99E00315524 /* Info.plist */,
+			);
+			path = CustomLeakTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F78ABA2F21DCC99D00315524 /* CustomLeakTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F78ABA5C21DCC99E00315524 /* Build configuration list for PBXNativeTarget "CustomLeakTest" */;
+			buildPhases = (
+				F78ABA2C21DCC99D00315524 /* Sources */,
+				F78ABA2D21DCC99D00315524 /* Frameworks */,
+				F78ABA2E21DCC99D00315524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomLeakTest;
+			productName = CustomLeakTest;
+			productReference = F78ABA3021DCC99D00315524 /* CustomLeakTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F78ABA4721DCC99E00315524 /* CustomLeakTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F78ABA5F21DCC99E00315524 /* Build configuration list for PBXNativeTarget "CustomLeakTestTests" */;
+			buildPhases = (
+				F78ABA4421DCC99E00315524 /* Sources */,
+				F78ABA4521DCC99E00315524 /* Frameworks */,
+				F78ABA4621DCC99E00315524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F78ABA4A21DCC99E00315524 /* PBXTargetDependency */,
+			);
+			name = CustomLeakTestTests;
+			productName = CustomLeakTestTests;
+			productReference = F78ABA4821DCC99E00315524 /* CustomLeakTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F78ABA5221DCC99E00315524 /* CustomLeakTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F78ABA6221DCC99E00315524 /* Build configuration list for PBXNativeTarget "CustomLeakTestUITests" */;
+			buildPhases = (
+				F78ABA4F21DCC99E00315524 /* Sources */,
+				F78ABA5021DCC99E00315524 /* Frameworks */,
+				F78ABA5121DCC99E00315524 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F78ABA5521DCC99E00315524 /* PBXTargetDependency */,
+			);
+			name = CustomLeakTestUITests;
+			productName = CustomLeakTestUITests;
+			productReference = F78ABA5321DCC99E00315524 /* CustomLeakTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F78ABA2821DCC99D00315524 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wp;
+				TargetAttributes = {
+					F78ABA2F21DCC99D00315524 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F78ABA4721DCC99E00315524 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F78ABA2F21DCC99D00315524;
+					};
+					F78ABA5221DCC99E00315524 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F78ABA2F21DCC99D00315524;
+					};
+				};
+			};
+			buildConfigurationList = F78ABA2B21DCC99D00315524 /* Build configuration list for PBXProject "CustomLeakTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F78ABA2721DCC99D00315524;
+			productRefGroup = F78ABA3121DCC99D00315524 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F78ABA2F21DCC99D00315524 /* CustomLeakTest */,
+				F78ABA4721DCC99E00315524 /* CustomLeakTestTests */,
+				F78ABA5221DCC99E00315524 /* CustomLeakTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F78ABA2E21DCC99D00315524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F78ABA4021DCC99D00315524 /* LaunchScreen.storyboard in Resources */,
+				F78ABA3D21DCC99D00315524 /* Assets.xcassets in Resources */,
+				F78ABA3B21DCC99D00315524 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F78ABA4621DCC99E00315524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F78ABA5121DCC99E00315524 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F78ABA2C21DCC99D00315524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F78ABA3821DCC99D00315524 /* ViewController.m in Sources */,
+				F78ABA4321DCC99D00315524 /* main.m in Sources */,
+				F78ABA6C21DCCA2400315524 /* UINavigationController+LeakTest.m in Sources */,
+				F78ABA6B21DCCA2400315524 /* TestViewController.m in Sources */,
+				F78ABA3521DCC99D00315524 /* AppDelegate.m in Sources */,
+				F78ABA6D21DCCA2400315524 /* UIViewController+LeaksTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F78ABA4421DCC99E00315524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F78ABA4D21DCC99E00315524 /* CustomLeakTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F78ABA4F21DCC99E00315524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F78ABA5821DCC99E00315524 /* CustomLeakTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F78ABA4A21DCC99E00315524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F78ABA2F21DCC99D00315524 /* CustomLeakTest */;
+			targetProxy = F78ABA4921DCC99E00315524 /* PBXContainerItemProxy */;
+		};
+		F78ABA5521DCC99E00315524 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F78ABA2F21DCC99D00315524 /* CustomLeakTest */;
+			targetProxy = F78ABA5421DCC99E00315524 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F78ABA3921DCC99D00315524 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F78ABA3A21DCC99D00315524 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F78ABA3E21DCC99D00315524 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F78ABA3F21DCC99D00315524 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F78ABA5A21DCC99E00315524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F78ABA5B21DCC99E00315524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F78ABA5D21DCC99E00315524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZDPEKF8WKA;
+				INFOPLIST_FILE = CustomLeakTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmcc.gdmobileimoa.CustomLeakTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F78ABA5E21DCC99E00315524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZDPEKF8WKA;
+				INFOPLIST_FILE = CustomLeakTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmcc.gdmobileimoa.CustomLeakTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F78ABA6021DCC99E00315524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZDPEKF8WKA;
+				INFOPLIST_FILE = CustomLeakTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmcc.gdmobileimoa.CustomLeakTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomLeakTest.app/CustomLeakTest";
+			};
+			name = Debug;
+		};
+		F78ABA6121DCC99E00315524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZDPEKF8WKA;
+				INFOPLIST_FILE = CustomLeakTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmcc.gdmobileimoa.CustomLeakTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomLeakTest.app/CustomLeakTest";
+			};
+			name = Release;
+		};
+		F78ABA6321DCC99E00315524 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZDPEKF8WKA;
+				INFOPLIST_FILE = CustomLeakTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmcc.gdmobileimoa.CustomLeakTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomLeakTest;
+			};
+			name = Debug;
+		};
+		F78ABA6421DCC99E00315524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZDPEKF8WKA;
+				INFOPLIST_FILE = CustomLeakTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmcc.gdmobileimoa.CustomLeakTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomLeakTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F78ABA2B21DCC99D00315524 /* Build configuration list for PBXProject "CustomLeakTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78ABA5A21DCC99E00315524 /* Debug */,
+				F78ABA5B21DCC99E00315524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F78ABA5C21DCC99E00315524 /* Build configuration list for PBXNativeTarget "CustomLeakTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78ABA5D21DCC99E00315524 /* Debug */,
+				F78ABA5E21DCC99E00315524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F78ABA5F21DCC99E00315524 /* Build configuration list for PBXNativeTarget "CustomLeakTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78ABA6021DCC99E00315524 /* Debug */,
+				F78ABA6121DCC99E00315524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F78ABA6221DCC99E00315524 /* Build configuration list for PBXNativeTarget "CustomLeakTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78ABA6321DCC99E00315524 /* Debug */,
+				F78ABA6421DCC99E00315524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F78ABA2821DCC99D00315524 /* Project object */;
+}
